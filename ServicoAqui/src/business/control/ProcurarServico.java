@@ -2,7 +2,7 @@ package business.control;
 
 import business.model.ServicoState;
 import infra.InfraException;
-import infra.ServicoFile;
+import infra.ServFile;
 
 /**
  *
@@ -12,7 +12,7 @@ public class ProcurarServico {
     
     protected ServicoState state;
     public ProcurarServico(){
-    ServicoFile servs = new ServicoFile();
+    ServFile servs = new ServFile();
         try{
             System.out.println(servs.loadServs().toString());
             state = state.setIndisponivel();

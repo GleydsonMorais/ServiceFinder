@@ -1,5 +1,10 @@
 package business.control;
 
+import business.model.Prototype;
+import business.util.LoginInvalidException;
+import business.util.PasswordInvalidException;
+import infra.InfraException;
+
 /**
  *
  * @author GM
@@ -15,7 +20,11 @@ public class Pagamento {
         if(valor == 25){
             
             //Autoriza pagamento
-            System.out.println("Pagamento realizado com sucesso!");            
+            System.out.println("Pagamento realizado com sucesso!");
+            try{
+                Prototype pt = new Prototype();
+            }
+            catch(InfraException | LoginInvalidException | PasswordInvalidException e){}
         }
         else{
             

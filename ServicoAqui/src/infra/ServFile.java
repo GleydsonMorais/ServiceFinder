@@ -21,11 +21,11 @@ import java.util.logging.Logger;
  *
  * @author GM
  */
-public class ServicoFile {
+public class ServFile {
     
-    public static Logger logger = Logger.getLogger(ServicoFile.class.getName());
+    public static Logger logger = Logger.getLogger(ServFile.class.getName());
 
-	public ServicoFile() {
+	public ServFile() {
 		
             try {
 
@@ -35,10 +35,10 @@ public class ServicoFile {
                 hdConsole.setLevel(Level.OFF);
                 hdArquivo.setLevel(Level.OFF);
 
-                ServicoFile.logger.addHandler(hdConsole);
-                ServicoFile.logger.addHandler(hdArquivo);
+                ServFile.logger.addHandler(hdConsole);
+                ServFile.logger.addHandler(hdArquivo);
 
-                ServicoFile.logger.setUseParentHandlers(false);
+                ServFile.logger.setUseParentHandlers(false);
 
             } catch (IOException ex) {
                 logger.severe("ocorreu um erro no arquivo durante a execuÃ§Ã£o do programa");
